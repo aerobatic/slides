@@ -1,0 +1,13 @@
+{
+  "shim": {
+    "reveal": {
+      "exports": "Reveal"
+    }
+  },
+  "paths": {
+    "reveal": ["//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/js/reveal.min"]
+  },
+  "mainModules": {
+    "index": "js/slides"
+  }
+}
