@@ -5,23 +5,23 @@
 
 
 // Default mixins and settings -----------------
-@import "../template/mixins";
-@import "../template/settings";
+@import "./template/mixins";
+@import "./template/settings";
 // ---------------------------------------------
 
 
 
 // Include theme-specific fonts
 @font-face {
-	font-family: 'League Gothic';
-	src: url('../../lib/font/league_gothic-webfont.eot');
-	src: url('../../lib/font/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../../lib/font/league_gothic-webfont.woff') format('woff'),
-		 url('../../lib/font/league_gothic-webfont.ttf') format('truetype'),
-		 url('../../lib/font/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
+  font-family: 'League Gothic';
+  src: url('../../lib/font/league_gothic-webfont-eot');
+  src: url('../../lib/font/league_gothic-webfont-eot#iefix') format('embedded-opentype'),
+     url('../../lib/font/league_gothic-webfont-woff') format('woff'),
+     url('../../lib/font/league_gothic-webfont-ttf') format('truetype'),
+     url('../../lib/font/league_gothic-webfont-svg#LeagueGothicRegular') format('svg');
 
-	font-weight: normal;
-	font-style: normal;
+  font-weight: normal;
+  font-style: normal;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
@@ -64,5 +64,5 @@ $selectionBackgroundColor: $magenta;
 
 
 // Theme template ------------------------------
-@import "../template/theme";
+@import "./template/theme";
 // ---------------------------------------------
