@@ -1,0 +1,25 @@
+{
+  "name": "aerobatic-slides",
+  "version": "0.0.0",
+  "description": "Presentation slides ",
+  "main": "yoke sim",
+  "scripts": {
+    "test": "yoke test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aerobatic/slides.git"
+  },
+  "author": "David Von Lehman",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/aerobatic/slides/issues"
+  },
+  "homepage": "http://slides.aerobatic.io",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-favicons": "~0.6.4"
+  },
+  "dependencies": {
+  }
+}
