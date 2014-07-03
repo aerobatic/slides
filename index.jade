@@ -1,145 +1,197 @@
-.reveal
-  .slides
-    section.title(data-background-size="300px")
-      h1 Static Single Page Web Apps
-      h3 The Good, the Bad, and the Ugly
-      p
-        small David Von Lehman / <a href="http://twitter.com/davidvlsea">@davidvlsea</a>
+html
+  head
+    title Aerobatic - HTML5 app platform - Wings for nimble web apps
 
-    section
-      h2 Single Page App (SPA)
-      ul
-        li Web application that fits into a single web page
-        li Dynamic content fetching
-        li Navigability via in-page transitions rather than full page loads
-        li Client-side routing
+    meta(charset="UTF-8")
+    meta(name="fragment", content="!")
+    meta(name="google-site-verification", content="YbKZLxUG3Ofxi-WvBgTalaMUg7azE4-5tmLya_6esRk")
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
 
-    section
-      h2 Static Web App (SWA)
-      blockquote(cite="http://www.staticapps.org/articles/defining-static-web-apps") Any web application that can be delivered directly to an end user's browser without server-side alteration of the HTML, CSS, or JavaScript content...rich sites that utilize technologies in the browser instead of on the server to deliver dynamic content.
-      br
-      small A Field Guide to Static Apps - http://www.staticapps.org
+    link(rel='apple-touch-icon-precomposed', sizes='114x114', href='favicons/apple-touch-icon-114x114-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='120x120', href='favicons/apple-touch-icon-120x120-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='144x144', href='favicons/apple-touch-icon-144x144-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='152x152', href='favicons/apple-touch-icon-152x152-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='60x60', href='favicons/apple-touch-icon-60x60-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='72x72', href='favicons/apple-touch-icon-72x72-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='76x76', href='favicons/apple-touch-icon-76x76-precomposed.png')
+    link(rel='icon', type='image/png', sizes='64x64', href='favicons/favicon.png')
+    meta(name='msapplication-square144x144logo', content='favicons/windows-tile-144x144.png')
+    meta(name='msapplication-square150x150logo', content='favicons/windows-tile-150x150.png')
+    meta(name='msapplication-square310x310logo', content='favicons/windows-tile-310x310.png')
+    meta(name='msapplication-square70x70logo', content='favicons/windows-tile-70x70.png')
 
-    section
-      h1 The Good
+    link(rel="Stylesheet", href="css/reveal.min.css")
+    link(rel="Stylesheet", href="css/theme/default.css")
+    link(rel="Stylesheet", href="css/theme/moon.css")
+    link(rel="Stylesheet", href="css/custom.css")
+  body
+    .reveal
+      .slides
+        section.title(data-background-size="300px")
+          h1 Static Single Page Web Apps
+          h3 The Good, the Bad, and the Ugly
+          p
+            small David Von Lehman / <a href="http://twitter.com/davidvlsea">@davidvlsea</a> / david@aerobatic.io
 
-    section
-      h2 SPA Advantages
-      ul
-        li More fluid, native feeling experience
-        li Progressive loading
-        li More conducive to touch interactions
-        li App vs. website mentality
+        section
+          h2 Single Page App (SPA)
+          ul
+            li Web application that fits into a single web page
+            li Dynamic content fetching
+            li Navigability via in-page transitions rather than full page loads
+            li Client-side routing
 
-    section
-      h2 Static Advantages
-      ul
-        li No app server administration
-        li Deployment simplicity
-        li Build with what you need to know anyway HTML/CSS/JavaScript
-        li Streamlined development workflow - allows focus
-        li Cheap to host and scale
-        li Forces a service oriented mindset
+        section
+          h2 Static Web App (SWA)
+          blockquote(cite="http://www.staticapps.org/articles/defining-static-web-apps") Any web application that can be delivered directly to an end user's browser without server-side alteration of the HTML, CSS, or JavaScript content...rich sites that utilize technologies in the browser instead of on the server to deliver dynamic content.
+          br
+          small A Field Guide to Static Apps - http://www.staticapps.org
 
-    section
-      h2 Services are Everywhere
-      ul
-        li 11,000+ APIs on <a href="http://www.programmableweb.com/">Programmable Web</a>
-        li Backend as a Service (BaaS) - <a href="http://www.firebase.com">Firebase</a>, <a href="http://www.parse.com">Parse</a>
-        li Even <a target="_blank" href="https://aws.amazon.com/sdkforbrowser/">AWS</a> and <a target="_blank" href="https://developers.google.com/api-client-library/javascript/">Google</a> providing direct browser API integration
-        li Build your own APIs
+        section
+          h1 The Good
 
-    section
-      h2 Web Keeps Getting Better
-      ul
-        li Libs for SPAs - <a href="http://www.angularjs.org" target="_blank">AngularJS</a>, <a href="http://emberjs.com" target="_blank">Ember</a>, <a href="http://backbonejs.org" target="_blank">Backbone</a>
-        li Modern browser ubiquity - <a href="http://thenextweb.com/insider/2014/05/01/ie11-market-share-passes-ie10-ie9-combined-chrome-cements-lead-firefox/" target="_blank">IE story improving</a>
-        li Exponential browser perf improvements
-        li Vibrant open source ecosystem
-        li CSS3 animations
-        li On the horizon - WebRTC, ES6, WebComponents, famo.us
-        li Tools - Grunt, Bower
-        li
-          a(href="https://developers.google.com/webmasters/ajax-crawling/", target="_blank") Google AJAX crawling specification
+        section
+          h2 SPA Advantages
+          ul
+            li More fluid, native feeling experience
+            li Progressive loading
+            li More conducive to touch interactions
+            li App vs. website mentality
 
-    section
-      h2 Content Focused SPAs
-      ul
-        li
-          a(href="http://www.nytimes.com/chrome") NY Times Chrome App
-        li
-          a(href="http://www.yahoo.com/tech") Yahoo Tech News
+        section
+          h2 Static Advantages
+          ul
+            li No app server administration
+            li Deployment simplicity
+            li Build with what you need to know anyway HTML/CSS/JavaScript
+            li Streamlined development workflow - allows focus
+            li Cheap to host and scale
+            li Forces a service oriented mindset
 
-    section
-      h2 SPA =&gt; Future? &lt;= SWA
-      a.image(href="#", target="_blank")
-        img(width="590", height="394", asset-src="images/venn_diagram", alt="Venn Diagram")
+        section
+          h2 Services are Everywhere
+          ul
+            li 11,000+ APIs on <a href="http://www.programmableweb.com/">Programmable Web</a>
+            li Backend as a Service (BaaS) - <a href="http://www.firebase.com">Firebase</a>, <a href="http://www.parse.com">Parse</a>
+            li Even <a target="_blank" href="https://aws.amazon.com/sdkforbrowser/">AWS</a> and <a target="_blank" href="https://developers.google.com/api-client-library/javascript/">Google</a> providing direct browser API integration
+            li Build your own APIs
 
-    section
-      h1 The Bad
+        section
+          h2 Web Keeps Getting Better
+          ul
+            li Libs for SPAs - <a href="http://www.angularjs.org" target="_blank">AngularJS</a>, <a href="http://emberjs.com" target="_blank">Ember</a>, <a href="http://backbonejs.org" target="_blank">Backbone</a>
+            li Modern browser ubiquity - <a href="http://thenextweb.com/insider/2014/05/01/ie11-market-share-passes-ie10-ie9-combined-chrome-cements-lead-firefox/" target="_blank">IE story improving</a>
+            li Exponential browser perf improvements
+            li Vibrant open source ecosystem
+            li CSS3 animations
+            li On the horizon - WebRTC, ES6, WebComponents, famo.us
+            li Tools - Grunt, Bower
+            li
+              a(href="https://developers.google.com/webmasters/ajax-crawling/", target="_blank") Google AJAX crawling specification
 
-    section
-      h2 SPA Disadvantages
-      ul
-        li SEO - search bots don't execute JavaScript
-        li More complex, JavaScript hell
-        li Mental shift from server to browser
-        li Back button, refreshes, deep links
-        li Auth
+        section
+          h2 Content Focused SPAs
+          ul
+            li
+              a(href="http://www.nytimes.com/chrome") NY Times Chrome App
+            li
+              a(href="http://www.yahoo.com/tech") Yahoo Tech News
 
-    section
-      h2 Static App Disadvantages
-      ul
-        li API keys exposed in source code
-        li Slow or rate limited APIs
-        li No secure session state
-        li Localhost integration, i.e. OAuth
-        li Lack of JSONP or CORS support
-        li APIs that don't want to be exposed to the world
+        section
+          h2 SPA =&gt; Future? &lt;= SWA
+          a.image(href="#", target="_blank")
+            img(width="590", height="394", src="images/venn_diagram.jpg", alt="Venn Diagram")
 
-    section
-      h1 The Ugly
-      ul
-        li Browser plugins - Flash, Silverlight
-        li Mobile browser capabilities still lagging - jerky animations
-        li Homegrown frameworks
-        li Plugin/libs bloat
-        li Javascript memory leak debugging
-        li Security through obfuscation
+        section
+          h1 The Bad
 
-    section
-      h2 Introducing Aerobatic
-      ul
-        li Managed cloud middle-tier platform for single page static apps
-        li Build static apps but benefit from an active server working on your behalf
-        li Use the browser libraries you love
-        li Powered by AWS, Redis, node.js, and RequireJS
+        section
+          h2 SPA Disadvantages
+          ul
+            li SEO - search bots don't execute JavaScript
+            li More complex, JavaScript hell
+            li Mental shift from server to browser
+            li Back button, refreshes, deep links
+            li Auth
 
-    section
-      h2 Smart Hosting Modules
-      ul
-        li Suite of smart hosting modules
-        li SEO snapshots
-        li Intelligent service proxy
-        li Asset delivery optimization - CDN + gzip + min + fingerprinted
-        li Split test multiple versions
-        li Fully integrated development using simulator mode
-        li One click push to cloud
-        li Zero config pre-processing - SASS, LESS, CoffeeScript, etc.
-        li OAuth integration
+        section
+          h2 Static App Disadvantages
+          ul
+            li API keys exposed in source code
+            li Slow or rate limited APIs
+            li No secure session state
+            li Localhost integration, i.e. OAuth
+            li Lack of JSONP or CORS support
+            li APIs that don't want to be exposed to the world
 
-    section
-      h1 Demo!
+        section
+          h1 The Ugly
+          ul
+            li Browser plugins - Flash, Silverlight
+            li Mobile browser capabilities still lagging - jerky animations
+            li Homegrown frameworks
+            li Plugin/libs bloat
+            li Javascript memory leak debugging
+            li Security through obfuscation
 
-    section
-      h2 Learn More
-      p This presentation at <a href="http://presentations.aerobatic.io">http://presentations.aerobatic.io</a>
-      ul
-        li <a href="http://www.aerobatic.io" target="_blank">www.aerobatic.io</a>
-        li These slides online at <a href="http://slides.aerobatic.io" target="_blank">slides.aerobatic.io</a>
-        li <a href="https://twitter.com/aerobaticapp">@aerobaticapp</a>
-        li david@aerobatic.io
+        section
+          h2 Introducing Aerobatic
+          ul
+            li Managed cloud middle-tier platform for single page static apps
+            li Build static apps but benefit from an active server working on your behalf
+            li Use the browser libraries you love
+            li Powered by AWS, Redis, Grunt, and Node.js
 
-      p
-        a(href="http://www.aerobatic.io", target="_blank")
-          img.plain(src="https://aerobaticapp.com/images/logo-small.png", alt="Aerobatic logo")
+        section
+          h2 Smart Hosting Modules
+          ul
+            li Suite of smart hosting modules
+            li SEO snapshots
+            li Intelligent service proxy
+            li Asset delivery optimization - CDN + gzip + min + fingerprinted
+            li Split test multiple versions
+            li Fully integrated development environment using simulator mode
+            li "grunt deploy" to the cloud
+            li OAuth integration
+
+        section
+          h1 Demo!
+
+        section
+          h2 Learn More
+          ul
+            li <a href="http://www.aerobatic.io" target="_blank">www.aerobatic.io</a>
+            li These slides online at <a href="http://slides.aerobatic.io" target="_blank">slides.aerobatic.io</a>
+            li <a href="https://twitter.com/aerobaticapp">@aerobaticapp</a>
+            li david@aerobatic.io
+            li Wings for nimble web apps
+
+          p
+            a(href="http://www.aerobatic.io", target="_blank")
+              img.plain(src="https://aerobaticapp.com/images/logo-small.png", alt="Aerobatic logo")
+
+    script(src="//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/js/reveal.min.js")
+    script.
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        // dependencies: [
+        //   { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        //   { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        //   { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        //   { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        //   { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+        //   { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        // ]
+      });
